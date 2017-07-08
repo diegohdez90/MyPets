@@ -12,6 +12,7 @@
 		31202D971F1134BE00C1B713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31202D951F1134BE00C1B713 /* Main.storyboard */; };
 		31202D991F1134BE00C1B713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31202D981F1134BE00C1B713 /* Assets.xcassets */; };
 		31202D9C1F1134BE00C1B713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31202D9A1F1134BE00C1B713 /* LaunchScreen.storyboard */; };
+		31202DA41F11468600C1B713 /* PetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31202DA31F11468600C1B713 /* PetTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		31202D981F1134BE00C1B713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31202D9B1F1134BE00C1B713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31202D9D1F1134BE00C1B713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31202DA31F11468600C1B713 /* PetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				31202D911F1134BE00C1B713 /* AppDelegate.swift */,
 				31202D931F1134BE00C1B713 /* ViewController.swift */,
+				31202DA31F11468600C1B713 /* PetTableViewController.swift */,
 				31202D951F1134BE00C1B713 /* Main.storyboard */,
 				31202D981F1134BE00C1B713 /* Assets.xcassets */,
 				31202D9A1F1134BE00C1B713 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				31202D941F1134BE00C1B713 /* ViewController.swift in Sources */,
 				31202D921F1134BE00C1B713 /* AppDelegate.swift in Sources */,
+				31202DA41F11468600C1B713 /* PetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

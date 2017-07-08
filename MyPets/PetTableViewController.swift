@@ -8,28 +8,53 @@
 
 import UIKit
 
-class PetTableViewController: UIViewController {
+class PetTableViewController: UIViewController, UITableViewDataSource {
+    
+    let pets = ["Coqueta",
+                "Yanki",
+                "Bombi",
+                "Blu",
+                "Bobby",
+                "Snoopy",
+                "Woodstock",
+                "Spike",
+                "Belle",
+                "Hachi",
+                "Lazy",
+                "Scooby",
+                "Scrappy",
+                "Tom",
+                "Silvestre",
+                "Piolin",
+                "Garfield",
+                "Oddie",
+                "Felix"]
 
+    //lifecycle methods
+    @IBOutlet weak var petTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.petTableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
+    //UITableView delegate methods
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pets.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "petCell")
+        cell?.textLabel?.text = pets[indexPath.row]
+        return cell!
+    }
 }
