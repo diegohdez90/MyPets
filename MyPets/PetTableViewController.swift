@@ -10,7 +10,7 @@ import UIKit
 
 class PetTableViewController: UIViewController, UITableViewDataSource {
     
-    let pets = ["Coqueta",
+    var pets = ["Coqueta",
                 "Yanki",
                 "Bombi",
                 "Blu",
@@ -56,5 +56,11 @@ class PetTableViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "petCell")
         cell?.textLabel?.text = pets[indexPath.row]
         return cell!
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let newPetController = segue.destination as! AddPetViewController
+        
+        newPetController.petsController = self
     }
 }
