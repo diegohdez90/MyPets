@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PetTableViewController: UIViewController, UITableViewDataSource {
+class PetTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var pets = ["Coqueta",
                 "Yanki",
@@ -36,6 +36,7 @@ class PetTableViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.petTableView.dataSource = self
+        self.petTableView.delegate=self
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,5 +63,12 @@ class PetTableViewController: UIViewController, UITableViewDataSource {
         let newPetController = segue.destination as! AddPetViewController
         
         newPetController.petsController = self
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let petSelected =  pets[indexPath.row]
+        let petDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "PetDetail") as! PetDetailViewController
+        petDetailVC.petName = petSelected
+        self.navigationController?.pushViewController(petDetailVC, animated: true)
     }
 }

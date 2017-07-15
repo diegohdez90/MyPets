@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3108E4061F1A8BD000CED387 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3108E4051F1A8BD000CED387 /* PetDetailViewController.swift */; };
 		31202D921F1134BE00C1B713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31202D911F1134BE00C1B713 /* AppDelegate.swift */; };
 		31202D941F1134BE00C1B713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31202D931F1134BE00C1B713 /* ViewController.swift */; };
 		31202D971F1134BE00C1B713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31202D951F1134BE00C1B713 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3108E4051F1A8BD000CED387 /* PetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
 		31202D8E1F1134BE00C1B713 /* MyPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31202D911F1134BE00C1B713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31202D931F1134BE00C1B713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				31202D981F1134BE00C1B713 /* Assets.xcassets */,
 				31202D9A1F1134BE00C1B713 /* LaunchScreen.storyboard */,
 				31202D9D1F1134BE00C1B713 /* Info.plist */,
+				3108E4051F1A8BD000CED387 /* PetDetailViewController.swift */,
 			);
 			path = MyPets;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				31202D941F1134BE00C1B713 /* ViewController.swift in Sources */,
 				31202D921F1134BE00C1B713 /* AppDelegate.swift in Sources */,
 				31202DA61F115EC600C1B713 /* AddPetViewController.swift in Sources */,
+				3108E4061F1A8BD000CED387 /* PetDetailViewController.swift in Sources */,
 				31202DA41F11468600C1B713 /* PetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +311,7 @@
 				31202DA21F1134BE00C1B713 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

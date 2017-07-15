@@ -154,6 +154,36 @@
             </objects>
             <point key="canvasLocation" x="2740" y="138.98050974512745"/>
         </scene>
+        <!--Pet Detail View Controller-->
+        <scene sceneID="2Bd-9m-tpf">
+            <objects>
+                <viewController storyboardIdentifier="PetDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Nt-xE-m5x" customClass="PetDetailViewController" customModule="MyPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x5N-AK-jhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="nrT-rF-DQH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dye-Kf-jYY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xb3-8l-xcH">
+                                <rect key="frame" x="0.0" y="146" width="359" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="xb3-8l-xcH" id="x8U-gB-O0V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1F5-ih-0EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740" y="802.848575712144"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Qb-6m-ZyF">
             <objects>
